@@ -15,11 +15,16 @@ To use the app:
 ![image](https://raw.githubusercontent.com/sandra-calvo/content_moderation/main/screencaptures/image1.png)
 
 
-## Natural Language API vs Generative AI
+## Natural Language Processing vs Generative AI
 
 It is also possible to use generative AI to do content moderation. For example by prompting:
 
-### Natural Language + Translation API:
+### Natural Language AI + Translation AI:
+
+For more information check:
+- [Natural Language AI](https://cloud.google.com/natural-language?hl=en)
+- [Text moderation attributes](https://cloud.google.com/natural-language/docs/moderating-text)
+- [Translation AI](https://cloud.google.com/translate?hl=en)
 
 **Strengths:**
 
