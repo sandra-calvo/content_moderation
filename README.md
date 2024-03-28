@@ -3,8 +3,11 @@
 ## Description
 
 This application is a text moderation analyzer that uses Google Cloud's Natural Language API and Translate API. 
+
 It takes Finnish text as input and analyzes it for potential moderation issues, such as profanity, hate speech, or violence. 
+
 The application then translates the text to English and displays the moderation results, including the confidence level for each category. 
+
 This tool can be useful for content creators, moderators, and anyone who needs to ensure that their text content is appropriate for a specific audience or platform.
 
 To use the app: 
@@ -16,8 +19,6 @@ To use the app:
 
 
 ## Natural Language Processing vs Generative AI
-
-It is also possible to use generative AI to do content moderation. For example by prompting:
 
 ### Natural Language AI + Translation AI:
 
@@ -52,6 +53,7 @@ For more information check:
 - Lack of transparency: It can be difficult to understand how generative AI models identify harmful content, making it challenging to explain moderation decisions.
 
 Keep in mind that NLP and translation aim to be deterministic. This means they provide the same output for a given input every time. They function like a set of rules, analyzing content based on predefined parameters.
+
 Contrast this with generative AI, which introduces randomness in the process. Generative models use statistical probabilities to create responses, leading to potential variations in output for the same input.
 
 ## Run the Application locally 
