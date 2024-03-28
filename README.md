@@ -94,7 +94,7 @@ Replace this path with the actual location of your downloaded JSON credentials f
 ### Run the application
 
 ```bash
-streamlit run app.py
+streamlit run content_moderation.py
 ```
 
 ## Important Note 
