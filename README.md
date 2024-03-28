@@ -12,7 +12,7 @@ To use the app:
 - Click the "Analyze: Text moderation" button. This will trigger the anaysis process. 
 - View the moderation results.
 
-![image](https://raw.githubusercontent.com/sandra-calvo/product_descriptions_genai/main/screencaptures/image1.png)
+![image](https://raw.githubusercontent.com/sandra-calvo/content_moderation/main/screencaptures/image1.png)
 
 
 ## Natural Language API vs Generative AI
@@ -51,7 +51,51 @@ Contrast this with generative AI, which introduces randomness in the process. Ge
 
 ## Run the Application locally 
 
+### Install requirements
 
+```bash
+pip install -r requirements.txt
+```
+
+### Google Cloud Credentials
+To run your code locally, which utilizes Google Cloud's Natural Language API and Translation API, you'll need to set up project credentials. 
+Here's a step-by-step guide:
+
+**1 .Create a Google Cloud Project (if you don't have one already):**
+
+Go to the Google Cloud Console: https://console.cloud.google.com and sign in to your Google account.
+
+If you don't have a project, click on "Create project" and follow the on-screen instructions to name and create a new project.
+
+**2. Enable the APIs:**
+
+In the Cloud Console navigation menu, go to "APIs & Services" and then "Library".
+- Search for and enable the following APIs:
+- "Cloud Natural Language API"
+- "Cloud Translation API"
+- Enabling these APIs allows your project to access them.
+
+**3. Create Service Account Credentials:**
+
+In the Cloud Console navigation menu, go to "IAM & Admin" and then "Service Accounts".
+- Click "Create Service Account" and give it a descriptive name (e.g., "TextModerationServiceAccount").
+- Click "Create" and then on the three vertical dots next to the newly created service account.
+- Select "Create key" and choose the JSON format for the key. This will download a file named something like "text-moderation-credentials.json" to your local machine.
+- This downloaded JSON file contains your credentials. Keep it secure and avoid sharing it publicly.
+
+**4. Update your code:**
+In the code you provided, there's a line that sets the path to the credential file:
+
+```python
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/YOUR_PATH/key.json"
+```
+Replace this path with the actual location of your downloaded JSON credentials file on your computer.
+
+### Run the application
+
+```bash
+streamlit run app.py
+```
 
 ## Important Note 
 This is not an officially supported Google product. The code in this repository is for demonstrative purposes only.
